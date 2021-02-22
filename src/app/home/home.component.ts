@@ -12,8 +12,8 @@ constructor(private apiService: ApiService) { }
 // tslint:disable-next-line:typedef
 ngOnInit() {
 this.apiService.get().subscribe((data: any[]) => {
-console.log(data);
 this.products = data;
+console.log(data);
 });
 }
 }
